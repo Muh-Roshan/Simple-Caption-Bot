@@ -4,4 +4,6 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 RUN apt update && apt upgrade -y
 RUN apt install ffmpeg -y 
-COPY . CMD python3 capbot.py
+COPY . .
+
+CMD python3 capbot.py
